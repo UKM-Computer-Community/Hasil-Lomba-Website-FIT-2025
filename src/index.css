@@ -1,0 +1,96 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #f6f8fd;
+  --secondary-color: #1f21b5;
+  --color-text: #231942;
+  --navbar-color: #ffffff;
+  --navbar-color-text: #000000;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  padding: 15px 0 15px 0;
+  width: 100%;
+  transition: all 0.2s ease;
+  z-index: 9999;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+}
+
+.navbar.color-active {
+  background-color: var(--navbar-color);
+  padding: 20px 0 20px 0;
+  border-bottom: 2px solid #1f21b5;
+}
+
+.navbar .navbar-brand {
+  color: var(--color-text);
+}
+
+/* .navbar .navbar-brand img {
+  width: 150px;
+} */
+.navbar .navbar-brand .logo-large {
+  width: 150px;
+  transition: width 0.3s ease;
+}
+
+.navbar .navbar-brand .logo-small {
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link a {
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--navbar-color-text);
+}
+
+.navbar .nav-link a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar .nav-link .active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.navbar .nav-link .active:hover {
+  color: var(--navbar-color);
+}
+
+/* NAVBAR */
+
+/* HOME */
+.Home {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  background: linear-gradient(45deg, orange, white, blue);
+}
+
+.Home .container {
+  background-color: #ffffff68;
+  padding: 30px;
+  border-radius: 10px;
+}
+.Home .container .carousel img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Home .container .carousel .carousel-caption{
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.Home .container .carousel .carousel-indicators button {
+  background-color:black;
+}
+
+/* HOME */
